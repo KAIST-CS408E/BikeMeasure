@@ -108,7 +108,7 @@ public class LocationService extends Service implements LocationListener,
     public void onConnected(Bundle bundle) {
         try {
             LocationServices.FusedLocationApi.requestLocationUpdates(
-                    mGoogleApiClient, mLocationRequest, this);
+                    mGoogleApiClient, mLocationRequest,this);
         } catch (SecurityException e) {
         }
     }
